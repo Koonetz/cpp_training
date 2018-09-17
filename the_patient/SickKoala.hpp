@@ -1,3 +1,8 @@
+#include <iostream>
+#include <cstring>
+#include <string>
+using namespace std;
+
 class SickKoala
 {
 public:
@@ -5,7 +10,7 @@ public:
   char *getName(void);
   void poke(void);
   bool takeDrug(char *drug);
-  void overdrive(char *str);
+  void overdrive(string str);
   
   SickKoala(); // constructor
   ~SickKoala(); // destructor

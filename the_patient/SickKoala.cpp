@@ -1,6 +1,5 @@
-#include <iostream>
-#include "SickKoala.hpp"
-#include <cstring>
+
+#include "SickKoala.hpp";
 using namespace std;
 
 SickKoala::SickKoala(void)
@@ -47,9 +46,21 @@ bool SickKoala::takeDrug(char *drug)
     }
 }
 
-void SickKoala::overdrive(char *str)
+void SickKoala::overdrive(string str)
 {
-  
+  size_t pos;
+  const string replace = "1337";
+  const string search = "Kreog";
+
+  for (pos = 0; ; pos += replace.length())
+    {
+      pos = str.find(search, pos);
+      if (pos == string::npos)
+	break;
+      str.erase(pos, search.length());
+      str.insert(pos, replace);
+    }
+  cout << str << endl;
 }
 
 int main(int ac, char **av)
