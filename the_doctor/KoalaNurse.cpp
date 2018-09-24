@@ -68,17 +68,3 @@ void KoalaNurse::timeCheck(void)
       this->work = false;
     }
 }
-
-int main(int ac, char **av)
-{
-  //int id = 0;
-  KoalaNurse nurse(10);
-  SickKoala  kek;
-
-  nurse.timeCheck();
-  kek.setName("kek");
-  nurse.patientName = kek.getName();
-  nurse.giveDrug("Mars", &kek);
-  nurse.readReport("kek.report");
-  nurse.timeCheck();
-}
