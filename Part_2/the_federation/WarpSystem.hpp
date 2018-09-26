@@ -17,6 +17,7 @@ namespace WarpSystem
   };
   class Core
   {
+  public:
     Core(QuantumReactor *reactor);
     ~Core();
     QuantumReactor *_coreReactor;

@@ -13,7 +13,7 @@ Federation::Starfleet::Ship::~Ship()
 
 }
 
-Federation::Ship::Ship(int length, int width, std::string name, int speed = 1): _length(length), _width(width), _name(name)
+Federation::Ship::Ship(int length, int width, std::string name, int maxWarp): _length(length), _width(width), _name(name)
 {
   cout << "Poverty Ship spawned!" << endl;
 }

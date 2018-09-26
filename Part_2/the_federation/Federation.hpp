@@ -22,7 +22,7 @@ namespace Federation
   class Ship
   {
   public:
-    Ship(int length, int width, std::string name);
+    Ship(int length, int width, std::string name, int maxWarp = 1);
     ~Ship();
   private:
     int _length;
