@@ -22,3 +22,24 @@ Federation::Ship::~Ship()
 {
 
 }
+
+void Federation::Starfleet::Ship::setupCore(WarpSystem::Core *core)
+{
+  cout << "Core is set" << endl;
+}
+
+void Federation::Ship::setupCore(WarpSystem::Core *core)
+{
+  cout << "Core is set" << endl;
+}
+
+void Federation::Starfleet::Ship::checkCore()
+{
+  //Call isStable function after lunch.
+  //Use pointers to member functions boi.
+  bool status = &WarpSystem::QuantumReactor::isStable;
+
+  
+  cout <<  status << endl;
+  cout << "oh god" << endl;
+}

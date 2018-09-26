@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cstring>
+#include "WarpSystem.hpp"
 
 namespace Federation
 {
@@ -11,6 +12,9 @@ namespace Federation
     public:
       Ship(int length, int width, std::string name, short maxWarp);
       ~Ship();
+
+      void setupCore(WarpSystem::Core *core);
+      void checkCore();
     private:
       int _length;
       int _width;
@@ -24,6 +28,9 @@ namespace Federation
   public:
     Ship(int length, int width, std::string name, int maxWarp = 1);
     ~Ship();
+
+    void setupCore(WarpSystem::Core *core);
+    void checkCore();
   private:
     int _length;
     int _width;

@@ -12,8 +12,8 @@ namespace WarpSystem
 
     bool isStable();
     void setStability(bool stability);
-  private:
-    bool _stability;
+    // QuantumReactor *checkReactor();
+    bool _stability = true;
   };
   class Core
   {
@@ -21,5 +21,6 @@ namespace WarpSystem
     Core(QuantumReactor *reactor);
     ~Core();
     QuantumReactor *_coreReactor;
+    QuantumReactor *checkReactor();
   };
 };
