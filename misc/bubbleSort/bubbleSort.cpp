@@ -17,6 +17,7 @@ void bubbleSort(int arr[], int n)
 
   while (i < n - 1)
     {
+      j = 0;
       while (j < n - i - 1)
 	{
 	  if (arr[j] > arr[j + 1])
@@ -32,7 +33,10 @@ void printArr(int arr[], int size)
   int i = 0;
 
   while (i < size)
-    std::cout << arr[i] << std::endl;
+    {
+      std::cout << arr[i] << " ";
+      i++;
+    }
   
 }
 
